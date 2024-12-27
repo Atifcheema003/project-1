@@ -1,0 +1,41 @@
+.main-upperHeader{
+    width: 100%;
+    height: 8vh;
+    background-color: #414141;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    color:aliceblue;
+    border-bottom: 2px solid black;
+}
+.buynow-button{
+     padding: 0.4rem 1.4rem;
+     background-color: rgb(74, 180, 74);
+     color: aliceblue;
+     border-color:rgb(62, 147, 62) ;
+     border: none;
+     font-weight: 700;
+     border-radius: 7px;
+     -webkit-border-radius: 7px;
+     -moz-border-radius: 7px;
+     -ms-border-radius: 7px;
+     -o-border-radius: 7px;
+}
+.logo-upperHeader{
+    font-weight: 700;
+    font-size: larger;
+}
+
+@media (max-width: 769px){
+    .main-upperHeader{
+        width: 100%;
+        height: 10vh;
+        background-color: #414141;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2%;
+        color:aliceblue;
+    }
+}

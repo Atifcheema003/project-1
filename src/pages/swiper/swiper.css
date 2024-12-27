@@ -1,0 +1,976 @@
+.main-swiper-page {
+    width: 100%;
+    /* height: 100vh; */
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23181122' fill-opacity='0.4'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    color: rgb(189, 196, 202);
+}
+
+.main-swiper-page h3 {
+    padding-left: 4.9rem;
+    padding-top: 4.9rem;
+    color: rgb(137, 67, 174);
+}
+
+.main-swiper-page h1 {
+    padding-left: 4.9rem;
+    font-size: 3rem;
+}
+
+.swiper-class {
+    width: 70%;
+    margin: auto;
+}
+
+.mySwiper {
+    height: 70vh;
+}
+
+.mySwiper img {
+    width: 100%;
+    /*The image will stretch to fill the width of the container */
+    height: 100vh;
+    /* Maintain the aspect ratio */
+    object-fit: cover;
+    /* Ensure the image covers its container without distortion */
+    border-radius: 10px;
+    /* Optional rounded corners */
+}
+
+
+/* Style the navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #9b7a85;
+    /* Set arrow color */
+    background: rgba(0, 0, 0, 0.5);
+    /* Add a semi-transparent background */
+    padding: 30px 0px;
+    /* Add padding around the arrows */
+    border: 2px solid #6d4553;
+    /* Optional border */
+    transition: transform 0.3s ease, background 0.3s ease;
+    /* Smooth animation */
+}
+
+/* Change size of the arrows */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 20px;
+    /* Adjust the size of the arrow icons */
+    color: rgb(83, 65, 65);
+}
+
+/* Hover effects */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    transform: scale(1.2);
+    /* Slightly enlarge on hover */
+    background: #4b1a2a;
+    /* Change background color */
+    color: #fff;
+    /* Change arrow color */
+}
+
+/* Add custom positions */
+.swiper-button-next {
+    right: 20px;
+    /* Adjust the position of the next button */
+}
+
+.swiper-button-prev {
+    left: 20px;
+    /* Adjust the position of the previous button */
+}
+
+/* code image side  */
+.main-code-image-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 4px solid rgb(65, 30, 160);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-top: 4rem;
+}
+
+.paragraph-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.paragraph-side ul {
+    list-style: none;
+}
+
+.paragraph-side ul li {
+    padding-top: 1rem;
+    font-weight: 600;
+    font-size: larger;
+}
+
+.paragraph-side>ul li {
+    position: relative;
+    cursor: pointer;
+    /* Show pointer cursor for clickable elements */
+    margin-left: 4.9rem;
+    transition: color 0.3s ease;
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+
+/* Add underline to each element */
+.paragraph-side>ul li::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    /*Adjustpositionfortheunderline*/
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: linear-gradient(to right, rgb(218, 14, 194), white);
+    transition: width 1s ease;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    /*box-shadow: rgba(244, 238, 238, 0.3) 0px 19px 38px, rgba(248, 245, 245, 0.22) 0px 15px 12px;
+    */
+    ;
+    -webkit-transition: width 1s ease;
+    -moz-transition: width 1s ease;
+    -ms-transition: width 1s ease;
+    -o-transition: width 1s ease;
+}
+
+/* Hover effect for underline */
+.paragraph-side>ul li:hover::after {
+    width: 60%;
+    /* Full underline on hover */
+}
+
+.paragraph-side>ul li:hover {
+    color: rgb(218, 14, 194);
+    /* Change text color on hover */
+}
+
+.paragraph-side h1 {
+    padding-top: 1rem;
+    padding-left: 3.9rem;
+}
+
+.paragraph-side button {
+    padding: 1.4rem;
+    width: 49%;
+    margin-left: 3.9rem;
+    margin-top: 2rem;
+    font-weight: 700;
+    font-size: large;
+    margin-bottom: 2rem;
+    color: #fdfafa;
+    background-color: rgba(135, 27, 189, 0.58);
+    border: none;
+    border-radius: 20px;
+  
+}
+
+.paragraph-side button:hover {
+    border: 3px solid rgb(105, 30, 186);
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    color: #b4acac;
+}
+
+.image-side {
+    height: 80vh;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+
+}
+
+.self-image-image-side {
+    border-radius: 20px;
+    box-shadow: rgba(174, 34, 176, 0.283) 0px 19px 38px, rgba(73, 13, 118, 0.219) 0px 15px 12px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.main-chatbot-page{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+    
+}
+.image-side-chatbot{
+    width: 45%;
+    margin: auto;
+}
+.self-image-chatabot{
+    width: 80%;
+    margin-left: 7rem;
+    margin-top: 1rem;
+}
+.text-side-chatbot{
+    width: 45%;
+    margin-right: 7rem;
+}
+.text-side-chatbot h3 h1{
+    padding: 10px;
+}
+.text-side-chatbot p{
+    padding-left: 90px;
+    margin-top: 1rem;
+}
+.text-side-chatbot button{
+    padding: 10px 40px;
+    font-size: large;
+    font-weight:600;
+    color: aliceblue;
+    background: linear-gradient(to right, rgb(218, 14, 194), white);
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin:4rem 7rem;
+}
+.text-side-chatbot button:hover{
+    background: linear-gradient(to right, rgb(126, 8, 112), rgb(168, 155, 155));
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .main-swiper-page {
+        width: 100%;
+        /* height: 100vh; */
+        background-color: #000000;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23181122' fill-opacity='0.4'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        color: rgb(189, 196, 202);
+    }
+
+    .main-swiper-page h3 {
+        padding-left: 4.9rem;
+        color: rgb(137, 67, 174);
+      
+    }
+
+    .main-swiper-page h1 {
+        padding-left: 4.9rem;
+        font-size: 3rem;
+    }
+
+    .swiper-class {
+        width: 90%;
+        margin: auto;
+    }
+
+    .mySwiper {
+        height: 70vh;
+    }
+
+    .mySwiper img {
+        width: 100%;
+        /* The image will stretch to fill the width of the container */
+        height: auto;
+        /* Maintain the aspect ratio */
+        object-fit: cover;
+        /* Ensure the image covers its container without distortion */
+        border-radius: 10px;
+        /* Optional rounded corners */
+    }
+
+
+    /* Style the navigation buttons */
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: #9b7a85;
+        /* Set arrow color */
+        background: rgba(0, 0, 0, 0.5);
+        /* Add a semi-transparent background */
+        padding: 30px 0px;
+        /* Add padding around the arrows */
+        border: 2px solid #6d4553;
+        /* Optional border */
+        transition: transform 0.3s ease, background 0.3s ease;
+        /* Smooth animation */
+    }
+
+    /* Change size of the arrows */
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        font-size: 20px;
+        /* Adjust the size of the arrow icons */
+        color: rgb(83, 65, 65);
+    }
+
+    /* Hover effects */
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+        transform: scale(1.2);
+        /* Slightly enlarge on hover */
+        background: #4b1a2a;
+        /* Change background color */
+        color: #fff;
+        /* Change arrow color */
+    }
+
+    /* Add custom positions */
+    .swiper-button-next {
+        right: 20px;
+        /* Adjust the position of the next button */
+    }
+
+    .swiper-button-prev {
+        left: 20px;
+        /* Adjust the position of the previous button */
+    }
+
+    /* code image side  */
+    .main-code-image-container {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border: 4px solid rgb(65, 30, 160);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        margin-top: 4rem;
+    }
+
+    .paragraph-side {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .paragraph-side ul {
+        list-style: none;
+    }
+
+    .paragraph-side ul li {
+        padding-top: 1rem;
+        font-weight: 600;
+        font-size: larger;
+    }
+
+    .paragraph-side>ul li {
+        position: relative;
+        cursor: pointer;
+        /* Show pointer cursor for clickable elements */
+        margin-left: 4.9rem;
+        transition: color 0.3s ease;
+        font-weight: 600;
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+    }
+
+
+    /* Add underline to each element */
+    .paragraph-side>ul li::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        /*Adjustpositionfortheunderline*/
+        left: 0;
+        width: 0;
+        height: 4px;
+        background: linear-gradient(to right, rgb(218, 14, 194), white);
+        transition: width 1s ease;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        /*box-shadow: rgba(244, 238, 238, 0.3) 0px 19px 38px, rgba(248, 245, 245, 0.22) 0px 15px 12px;
+        */
+        ;
+        -webkit-transition: width 1s ease;
+        -moz-transition: width 1s ease;
+        -ms-transition: width 1s ease;
+        -o-transition: width 1s ease;
+    }
+
+    /* Hover effect for underline */
+    .paragraph-side>ul li:hover::after {
+        width: 40%;
+        /* Full underline on hover */
+    }
+
+    .paragraph-side>ul li:hover {
+        color: rgb(218, 14, 194);
+        /* Change text color on hover */
+    }
+
+    .paragraph-side h1 {
+        padding-top: 1rem;
+        padding-left: 3.9rem;
+        padding-right: 1rem;
+    }
+
+    .paragraph-side button {
+        padding: 2.4rem;
+        width: 49%;
+        margin-left: 3.9rem;
+        margin-top: 2rem;
+        font-weight: 700;
+        font-size: large;
+        background-color: rgba(124, 67, 152, 0.155);
+        color: #fdfafa;
+        border: 4px solid rgb(105, 30, 186);
+        transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+    }
+
+    .paragraph-side button:hover {
+        background-color: rgba(135, 27, 189, 0.58);
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+    }
+
+    .image-side {
+        height: 60vh;
+        /* margin-bottom: 1rem; */
+        margin-right: 1rem;
+
+    }
+
+    .self-image-image-side {
+        border-radius: 20px;
+        box-shadow: rgba(174, 34, 176, 0.283) 0px 19px 38px, rgba(73, 13, 118, 0.219) 0px 15px 12px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+    .main-chatbot-page{
+        width: 100%;
+        display: flex;
+        flex-direction:column-reverse;
+       
+        
+    }
+    .main-chatbot-page{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 4rem;
+        
+    }
+    .image-side-chatbot{
+        width: 100%;
+        margin-left: 3px !important;
+        /* margin: auto; */
+    }
+    .self-image-chatabot{
+        width: 98%;
+        margin-left: 0px !important;
+        margin-top: 1rem;
+    }
+    .text-side-chatbot{
+        width: 98%;
+    }
+    .text-side-chatbot h3 h1{
+        padding: 1px !important;
+    }
+    .text-side-chatbot p{
+        margin-top: 1rem;
+    }
+    .text-side-chatbot button{
+        padding: 10px 40px;
+        font-size: large;
+        font-weight:600;
+        color: aliceblue;
+        background: linear-gradient(to right, rgb(218, 14, 194), white);
+        border: none;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        margin:4rem 7rem;
+    }
+    .text-side-chatbot button:hover{
+        background: linear-gradient(to right, rgb(126, 8, 112), rgb(168, 155, 155));
+    
+    }
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .main-swiper-page {
+        width: 100%;
+        /* height: 100vh; */
+        background-color: #000000;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23181122' fill-opacity='0.4'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        color: rgb(189, 196, 202);
+    }
+
+    .main-swiper-page h3 {
+        padding-left: 4.9rem;
+        padding-top: 12rem !important;
+        color: rgb(137, 67, 174);
+    }
+
+    .main-swiper-page h1 {
+        padding-left: 4.9rem;
+        font-size: 3rem;
+    }
+
+    .swiper-class {
+        width: 90%;
+        margin: auto;
+    }
+
+    .mySwiper {
+        height: 70vh;
+    }
+
+    .mySwiper img {
+        width: 100%;
+        /* The image will stretch to fill the width of the container */
+        height: auto;
+        /* Maintain the aspect ratio */
+        object-fit: cover;
+        /* Ensure the image covers its container without distortion */
+        border-radius: 10px;
+        /* Optional rounded corners */
+    }
+
+
+    /* Style the navigation buttons */
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: #9b7a85;
+        /*Setarrowcolor*/background: rgba(0, 0, 0, 0.5);
+        /*Addasemi-transparentbackground*/padding: 30px 0px;
+        /*Addpaddingaroundthearrows*/border: 2px solid #6d4553;
+        /*Optionalborder*/transition: transform 0.3s ease, background 0.3s ease;
+                /* Smooth animation */    
+        -webkit-transition: transform 0.3s ease, background 0.3s ease;
+        -moz-transition: transform 0.3s ease, background 0.3s ease;
+        -ms-transition: transform 0.3s ease, background 0.3s ease;
+        -o-transition: transform 0.3s ease, background 0.3s ease;
+}
+
+    /* Change size of the arrows */
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        font-size: 20px;
+        /* Adjust the size of the arrow icons */
+        color: rgb(83, 65, 65);
+    }
+
+    /* Hover effects */
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+        transform: scale(1.2);
+        /*Slightlyenlargeonhover*/background: #4b1a2a;
+        /*Changebackgroundcolor*/color: #fff;
+                /* Change arrow color */   
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+}
+
+    /* Add custom positions */
+    .swiper-button-next {
+        right: 20px;
+        /* Adjust the position of the next button */
+    }
+
+    .swiper-button-prev {
+        left: 20px;
+        /* Adjust the position of the previous button */
+    }
+
+    /* code image side  */
+    .main-code-image-container {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border: 4px solid rgb(65, 30, 160);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        margin-top: 4rem;
+    }
+
+    .paragraph-side {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .paragraph-side ul {
+        list-style: none;
+    }
+
+    .paragraph-side ul li {
+        padding-top: 1rem;
+        font-weight: 600;
+        font-size: larger;
+    }
+
+    .paragraph-side>ul li {
+        position: relative;
+        cursor: pointer;
+        /* Show pointer cursor for clickable elements */
+        margin-left: 4.9rem;
+        transition: color 0.3s ease;
+        font-weight: 600;
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+    }
+
+
+    /* Add underline to each element */
+    .paragraph-side>ul li::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        /*Adjustpositionfortheunderline*/
+        left: 0;
+        width: 0;
+        height: 4px;
+        background: linear-gradient(to right, rgb(218, 14, 194), white);
+        transition: width 1s ease;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        /*box-shadow: rgba(244, 238, 238, 0.3) 0px 19px 38px, rgba(248, 245, 245, 0.22) 0px 15px 12px;
+        */
+        ;
+        -webkit-transition: width 1s ease;
+        -moz-transition: width 1s ease;
+        -ms-transition: width 1s ease;
+        -o-transition: width 1s ease;
+    }
+
+    /* Hover effect for underline */
+    .paragraph-side>ul li:hover::after {
+        width: 40%;
+        /* Full underline on hover */
+    }
+
+    .paragraph-side>ul li:hover {
+        color: rgb(218, 14, 194);
+        /* Change text color on hover */
+    }
+
+    .paragraph-side h1 {
+        padding-top: 1rem;
+        padding-left: 2.9rem;
+    }
+
+    .paragraph-side button {
+        padding: 1rem;
+        width: 49%;
+        margin-left: 1.9rem;
+        margin-top: 2rem;
+        font-weight: 400;
+        font-size: 0.8rem;
+        margin-bottom: 2rem;
+
+        background-color: rgba(124, 67, 152, 0.155);
+        color: #fdfafa;
+        border: 4px solid rgb(105, 30, 186);
+        transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+    }
+
+    .paragraph-side button:hover {
+        background-color: rgba(135, 27, 189, 0.58);
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+    }
+
+    .image-side {
+        height: 60vh;
+        /* margin-bottom: 1rem; */
+        margin-right: 1rem;
+
+    }
+
+    .self-image-image-side {
+        border-radius: 20px;
+        box-shadow: rgba(174, 34, 176, 0.283) 0px 19px 38px, rgba(73, 13, 118, 0.219) 0px 15px 12px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    .image-side {
+        display: none;
+    }
+
+    .main-swiper-page {
+        width: 100%;
+        /* height: 100vh; */
+        background-color: #000000;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23181122' fill-opacity='0.4'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        color: rgb(189, 196, 202);
+    }
+
+    .main-swiper-page h3 {
+        padding-left: 2.9rem;
+        padding-top: 2.9rem;
+        color: rgb(137, 67, 174);
+        font-size: large;
+    }
+
+    .main-swiper-page h1 {
+        padding-left: 2.9rem;
+        font-size: 2rem;
+    }
+
+    .swiper-class {
+        width: 90%;
+        margin: auto;
+    }
+
+    .mySwiper {
+        height: 45vh;
+    }
+
+    .mySwiper img {
+        width: 100%;
+        /* The image will stretch to fill the width of the container */
+        height: auto;
+        /* Maintain the aspect ratio */
+        object-fit: cover;
+        /* Ensure the image covers its container without distortion */
+        border-radius: 10px;
+        /* Optional rounded corners */
+    }
+
+
+    /* Style the navigation buttons */
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: #9b7a85;
+        /* Set arrow color */
+        background: rgba(0, 0, 0, 0.5);
+        /* Add a semi-transparent background */
+        padding: 30px 0px;
+        /* Add padding around the arrows */
+        border: 2px solid #6d4553;
+        /* Optional border */
+        transition: transform 0.3s ease, background 0.3s ease;
+        /* Smooth animation */
+    }
+
+    /* Change size of the arrows */
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        font-size: 20px;
+        /* Adjust the size of the arrow icons */
+        color: rgb(83, 65, 65);
+    }
+
+    /* Hover effects */
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+        transform: scale(1.2);
+        /* Slightly enlarge on hover */
+        background: #4b1a2a;
+        /* Change background color */
+        color: #fff;
+        /* Change arrow color */
+    }
+
+    /* Add custom positions */
+    .swiper-button-next {
+        right: 20px;
+        /* Adjust the position of the next button */
+    }
+
+    .swiper-button-prev {
+        left: 20px;
+        /* Adjust the position of the previous button */
+    }
+
+    .main-code-image-container {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border: 4px solid rgb(65, 30, 160);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        margin-top: 4rem;
+    }
+
+    .paragraph-side {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .paragraph-side ul {
+        list-style: none;
+    }
+
+    .paragraph-side ul li {
+        padding-top: 1rem;
+        font-weight: 600;
+        font-size: larger;
+    }
+
+    .paragraph-side>ul li {
+        position: relative;
+        cursor: pointer;
+        /* Show pointer cursor for clickable elements */
+        margin-left: 4.9rem;
+        transition: color 0.3s ease;
+        font-weight: 600;
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+    }
+
+
+    /* Add underline to each element */
+    .paragraph-side>ul li::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        /*Adjustpositionfortheunderline*/
+        left: 0;
+        width: 0;
+        height: 4px;
+        background: linear-gradient(to right, rgb(218, 14, 194), white);
+        transition: width 1s ease;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        /*box-shadow: rgba(244, 238, 238, 0.3) 0px 19px 38px, rgba(248, 245, 245, 0.22) 0px 15px 12px;
+        */
+        
+        -webkit-transition: width 1s ease;
+        -moz-transition: width 1s ease;
+        -ms-transition: width 1s ease;
+        -o-transition: width 1s ease;
+    }
+
+    /* Hover effect for underline */
+    .paragraph-side>ul li:hover::after {
+        width: 40%;
+        /* Full underline on hover */
+    }
+
+    .paragraph-side>ul li:hover {
+        color: rgb(218, 14, 194);
+        /* Change text color on hover */
+    }
+
+    .paragraph-side h1 {
+        padding-top: 1rem;
+        padding-left: 2.9rem;
+    }
+
+    .paragraph-side button {
+        padding: 1rem;
+        width: 49%;
+        margin-left: 1.9rem;
+        margin-top: 2rem;
+        font-weight: 400;
+        font-size: 0.8rem;
+        margin-bottom: 2rem;
+
+        background-color: rgba(124, 67, 152, 0.155);
+        color: #fdfafa;
+        border: 4px solid rgb(105, 30, 186);
+        transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+    }
+
+    .paragraph-side button:hover {
+        background-color: rgba(135, 27, 189, 0.58);
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+    }
+
+    .image-side {
+        height: 60vh;
+        /* margin-bottom: 1rem; */
+        margin-right: 1rem;
+
+    }
+
+    .self-image-image-side {
+        border-radius: 20px;
+        box-shadow: rgba(174, 34, 176, 0.283) 0px 19px 38px, rgba(73, 13, 118, 0.219) 0px 15px 12px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+}
+
