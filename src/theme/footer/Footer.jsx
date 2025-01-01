@@ -14,7 +14,7 @@ const Footer = () => {
            <div className="email-and-button">
            <input type="email" placeholder='Enter your email here' />
            <div className="arrow-button">
-            <button>➔</button>
+            <button>➔</button> 
            </div>
            </div>
         </div>

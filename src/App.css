@@ -3,3 +3,67 @@
 margin: 0;
 box-sizing: border-box;
 }
+:root {
+  --color-primary: #805af5;
+  --color-primary-alt: #35316f;
+  --color-secondary: #cd99ff;
+  --color-primary-gradient-start: #805af5;
+  --color-primary-gradient-end: #cd99ff;
+  --color-heading: #fff;
+  --color-body: #bcc3d7;
+  --color-link: #bcc3d7;
+  --color-text-off: #565e78;
+  --color-dark: #21242d;
+  --color-darker: rgba(6, 6, 6, .7);
+  --color-darkest: rgba(0, 0, 0, .3);
+  --color-lessdark: #2e313d;
+  --color-black: #000;
+  --color-blackest: #16181e;
+  --color-border: hsla(0, 0%, 100%, .05);
+  --color-border-light: #e5e7eb;
+  --color-border-dark: #1e1e1e;
+  --dark-bg-1: #f8f8ff;
+  --dark-bg-2: #212330;
+  --dark-bg-3: #dde7ff;
+  --dark-bg-4: #ebefff;
+  --dark-color-link: #55595c;
+  --color-border-2: #c2d4ff;
+  --color-strock: #efefff;
+  --dark-gradient-1: linear-gradient(180deg, rgba(122, 151, 255, .19), rgba(248, 248, 255, .19));
+  --dark-gradient-2: linear-gradient(90deg, #6a48f2, #cd99ff 68.75%);
+  --dark-gradient-3: linear-gradient(93deg, #d3e0ff 0.78%, rgba(221, 231, 255, 0) 97.43%);
+  --dark-shadow-1: 0px 14px 36.7px 0px rgba(14, 12, 21, .06);
+  --dark-shadow-2: 0px 26px 45.4px 0px rgba(186, 193, 225, .72);
+  --color-bg-1: #0e0c15;
+  --color-gray: #3e414b;
+  --color-midgray: #878787;
+  --color-light: #e4e6ea; 
+  --color-lighter: #ced0d4;
+  --color-lightest: #f0f2f5;
+  --color-white: #fff;
+  --color-white-off: hsla(0, 0%, 100%, .05);
+  --color-success: #3eb75e;
+  --color-danger: #ff0003;
+  --color-warning: #ffc876;
+  --color-info: #1ba2db;
+  --color-facebook: #3b5997;
+  --color-twitter: #1ba1f2;
+  --color-youtube: #ed4141;
+  --color-linkedin: #0077b5;
+  --color-pinterest: #e60022;
+  --color-instagram: #c231a1;
+  --color-vimeo: #00adef;
+  --color-twitch: #6441a3;
+
+}
+/* :root {
+  --rt-color-white: #fff;
+  --rt-color-dark: #222;
+  --rt-color-success: #8dc572;
+  --rt-color-error: #be6464;
+  --rt-color-warning: #f0ad4e;
+  --rt-color-info: #337ab7;
+  --rt-opacity: 0.9;
+  --rt-transition-show-delay: 0.15s;
+  --rt-transition-closing-delay: 0.15s;
+} */
